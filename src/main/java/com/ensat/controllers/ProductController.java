@@ -92,4 +92,11 @@ public class ProductController {
         System.out.println("Returning products:");
         return "products";
     }
+
+    @GetMapping("/getAllProduct")
+    public String getAllProduct(Model model) {
+        model.addAttribute("products", productService.listAllProducts());
+        System.out.println("Returning products:");
+        return "products";
+    }
 }
