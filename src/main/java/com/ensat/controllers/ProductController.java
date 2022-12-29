@@ -86,4 +86,10 @@ public class ProductController {
         return "redirect:/products";
     }
 
+    @GetMapping("/getProductList")
+    public String getProductList(Model model) {
+        model.addAttribute("products", productService.listAllProducts());
+        System.out.println("Returning products:");
+        return "products";
+    }
 }
