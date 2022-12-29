@@ -14,7 +14,7 @@ public class IndexController {
     String index() {
         return "index";
     }
-
+// temp code
     @GetMapping("/getstates")
     String getState() {
         return "up";
