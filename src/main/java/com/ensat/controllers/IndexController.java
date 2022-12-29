@@ -15,7 +15,7 @@ public class IndexController {
         return "index";
     }
 
-    @GetMapping("/getstates")
+    @GetMapping("/getstate/{stateId}")
     String getState() {
         return "up";
     }
